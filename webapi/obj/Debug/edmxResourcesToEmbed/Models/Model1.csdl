@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBGR82Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PRODUCT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CATEGORY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MADED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRODUCT_DATE" Type="DateTime" Precision="0" />
+    <Property Name="PRICE" Type="Decimal" Precision="10" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="DBGR82Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PRODUCTs" EntityType="Self.PRODUCT" />
+  </EntityContainer>
+</Schema>
